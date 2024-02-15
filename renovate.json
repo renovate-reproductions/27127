@@ -8,13 +8,7 @@
       "fileMatch": ["\\.yml$"],
       "matchStrings": ["VAULT_VERSION *: *\"(?<currentValue>.+?)\""],
       "depNameTemplate": "hashicorp/vault",
-      "extractVersionTemplate": "^v?(?<version>.*)$",
       "datasourceTemplate": "github-releases"
-    }
-  ],
-  "packageRules": [
-    {
-      "updateTypes": ["major", "minor", "patch", "pin", "digest"]
     }
   ]
 }
