@@ -3,6 +3,12 @@
   "extends": [
     "config:base"
   ],
+  "logLevelRemap": [
+    {
+      "matchMessage": "PullRequests*",
+      "newLogLevel": "info"
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["\\.yml$"],
